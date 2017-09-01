@@ -1,8 +1,7 @@
-## Synopsis
-
-A very simple Go Web Service.
-
-A video of the process of creating the service and Docker image can be seen on [YouTube](https://youtu.be/-IoWzON4IRA)
+## Introduction
+```
+In this documentation we illustrate how to create a web-host running on the docker.
+```
 
 ## Run
 ```
@@ -16,25 +15,21 @@ go build
 
 ## Run Go Executable
 ```
-./go-web-service
+./Your-Root-Folder-Name
 ```
 
 ## Build Docker
 
 ```
-docker build -t codetaming/go-web-service .
+docker build -t go-server .
 ```
 
 ## Run Docker
 ```
-docker run --publish 8080:8080 -t codetaming/go-web-service
+docker run --publish 9143:9143 -t  go-server
 ```
 
-## Push to Docker Hub
+## Check if your docker is running correctly
 ```
-docker login
-docker push codetaming/go-web-service
+docker ps
 ```
-
-## Test in Browser
-[http://localhost:8080/Code%20Taming](http://localhost:8080/Code%20Taming)
